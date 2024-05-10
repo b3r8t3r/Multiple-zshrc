@@ -1,12 +1,8 @@
-declare sys=`uname`
+alias myips="ip a | grep inet | grep -v inet6"
 
-if [ "$sys" = "Linux" ]
-then
-        alias myips="ip a | grep inet | grep -v inet6"
-        alias poweroff="sudo /usr/sbin/poweroff"
-        alias reboot="sudo /usr/sbin/reboot"
-        alias halt="sudo /usr/sbin/halt"
-        alias shutdown="sudo /usr/sbin/shutdown"
-fi
+alias poweroff="sudo /usr/sbin/poweroff"
+alias reboot="sudo /usr/sbin/reboot"
+alias halt="sudo /usr/sbin/halt"
+alias shutdown="sudo /usr/sbin/shutdown"
 
-unset sys
+alias ch+x="sudo chmod +x"

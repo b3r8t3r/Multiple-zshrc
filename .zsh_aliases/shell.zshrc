@@ -16,6 +16,14 @@ alias lt="ls --tree"
 alias h="history"
 alias j="jobs -l"
 
+alias cp="cp -r"
+
+alias del="rm -rf"
+
+alias ping='ping -c 5'
+alias fastping='ping -c 100 -s.2'
+alias ports='netstat -tulanp'
+
 function mkcd {
      mkdir $1 && cd $1
 }
