@@ -3,20 +3,31 @@
 declare rc=$HOME/.$(basename $SHELL)rc
 declare aliases=~/.zsh_aliases
 declare downl='curl -fsSL'
+declare sys=`uname`
 
 if [ ! -d "$aliases" ]
 then
  mkdir "$aliases"
 fi
 
-$downl https://gist.github.com/b3r8t3r/84dff565dceafd5190064f4f51e78453/raw/d624800ecd5ef3c864f8d9c03a3b1b214aa52116/.zshrc >> $rc
+$downl https://github.com/b3r8t3r/Multiple-zshrc/raw/master/base.zshrc >> $rc
 
-$downl https://gist.github.com/b3r8t3r/84dff565dceafd5190064f4f51e78453/raw/29d443508d691eb856d9b0d43c411a125a6b38bb/apt.zshrc >> "$aliases/`basename $_`"
+$downl https://github.com/b3r8t3r/Multiple-zshrc/raw/master/.zsh_aliases/apt.zshrc >> "$aliases/`basename $_`"
 
-$downl https://gist.github.com/b3r8t3r/84dff565dceafd5190064f4f51e78453/raw/29d443508d691eb856d9b0d43c411a125a6b38bb/git.zshrc >> "$aliases/`basename $_`"
+$downl https://github.com/b3r8t3r/Multiple-zshrc/raw/master/.zsh_aliases/git.zshrc >> "$aliases/`basename $_`"
 
-$downl https://gist.github.com/b3r8t3r/84dff565dceafd5190064f4f51e78453/raw/29d443508d691eb856d9b0d43c411a125a6b38bb/python.zshrc >> "$aliases/`basename $_`"
+$downl https://github.com/b3r8t3r/Multiple-zshrc/raw/master/.zsh_aliases/python.zshrc >> "$aliases/`basename $_`"
 
-$downl https://gist.github.com/b3r8t3r/84dff565dceafd5190064f4f51e78453/raw/29d443508d691eb856d9b0d43c411a125a6b38bb/shell.zshrc >> "$aliases/`basename $_`"
+$downl https://github.com/b3r8t3r/Multiple-zshrc/raw/master/.zsh_aliases/shell.zshrc >> "$aliases/`basename $_`"
 
-$downl https://gist.github.com/b3r8t3r/84dff565dceafd5190064f4f51e78453/raw/29d443508d691eb856d9b0d43c411a125a6b38bb/test.zshrc >> "$aliases/`basename $_`"
+$downl https://github.com/b3r8t3r/Multiple-zshrc/raw/master/.zsh_aliases/test.zshrc >> "$aliases/`basename $_`"
+
+if [ "$sys" == "Darwin" ]
+then
+$downl https://github.com/b3r8t3r/Multiple-zshrc/raw/master/.zsh_aliases/macos.zshrc >> "$aliases/`basename $_`"
+fi
+
+if [ "$sys" == "Linux" ]
+then
+$downl https://github.com/b3r8t3r/Multiple-zshrc/raw/master/.zsh_aliases/linux.zshrc >> "$aliases/`basename $_`"
+fi

@@ -9,7 +9,7 @@ If you're tired of having a lot of aliases in one ~/.zshrc file, you can do thes
 To setup your zsh environment, script creates a folder `~/.zsh_aliases` and copies all of the aliases from the gist
 
 ```bash
-curl -fsSL https://gist.github.com/b3r8t3r/84dff565dceafd5190064f4f51e78453/raw/1e9accc42aed4e29ae88cf08d3382cf0eb21df45/zsh_alias_config.sh | bash
+curl -fsSL https://github.com/b3r8t3r/Multiple-zshrc/raw/master/zsh_alias_config.sh | bash
 ```
 
 ## Manual installation
