@@ -1,9 +1,8 @@
 #!/usr/bin/bash
 
 declare rc=$HOME/.$(basename $SHELL)rc
-declare aliases=~/.zsh_aliases
+declare aliases=$HOME/.zsh_aliases
 declare downl='curl -fsSL'
-declare sys=`uname`
 
 if [ ! -d "$aliases" ]
 then
@@ -22,12 +21,12 @@ $downl https://github.com/b3r8t3r/Multiple-zshrc/raw/master/.zsh_aliases/shell.z
 
 $downl https://github.com/b3r8t3r/Multiple-zshrc/raw/master/.zsh_aliases/test.zshrc >> "$aliases/`basename $_`"
 
-if [ "$sys" == "Darwin" ]
+if [ "`uname`" = "Darwin" ]
 then
 $downl https://github.com/b3r8t3r/Multiple-zshrc/raw/master/.zsh_aliases/macos.zshrc >> "$aliases/macos.zshrc"
 fi
 
-if [ "$sys" == "Linux" ]
+if [ "`uname`" = "Linux" ]
 then
 $downl https://github.com/b3r8t3r/Multiple-zshrc/raw/master/.zsh_aliases/linux.zshrc >> "$aliases/linux.zshrc"
 fi
