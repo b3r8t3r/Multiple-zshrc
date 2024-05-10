@@ -20,7 +20,7 @@ function clone {
 }
 
 function clone-private {
-    git clone gi@github.com:$1.git
+    git clone git@github.com:$1.git
 }
 
 function clone-cd {

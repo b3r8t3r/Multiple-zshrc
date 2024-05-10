@@ -1,6 +1,6 @@
 alias zshconfig="nano ~/.zshrc"
 alias bashconfig="nano ~/.bashrc"
-alias nanconfig="nano ~/.nanorc"
+alias nanoconfig="nano ~/.nanorc"
 alias ohmyzsh="nano ~/.oh-my-zsh"
 alias zshreconfig=". ~/.zshrc"
 
