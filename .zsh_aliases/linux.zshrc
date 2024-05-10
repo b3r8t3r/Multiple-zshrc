@@ -1,6 +1,6 @@
 declare sys=`uname`
 
-if [ "$sys" == "Linux" ]
+if [ "$sys" = "Linux" ]
 then
         alias myips="ip a | grep inet | grep -v inet6"
         alias poweroff="sudo /usr/sbin/poweroff"
