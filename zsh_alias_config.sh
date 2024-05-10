@@ -15,7 +15,7 @@ $downl https://github.com/b3r8t3r/Multiple-zshrc/raw/master/.zsh_aliases/git.zsh
 
 $downl https://github.com/b3r8t3r/Multiple-zshrc/raw/master/.zsh_aliases/python.zshrc >> "$aliases/python.zshrc"
 
-$downl https://github.com/b3r8t3r/Multiple-zshrc/raw/master/.zsh_aliases/shell.zshrc >> "$aliases/shell.zsrc"
+$downl https://github.com/b3r8t3r/Multiple-zshrc/raw/master/.zsh_aliases/shell.zshrc >> "$aliases/shell.zshrc"
 
 $downl https://github.com/b3r8t3r/Multiple-zshrc/raw/master/.zsh_aliases/test.zshrc >> "$aliases/test.zshrc"
 
