@@ -24,10 +24,10 @@ $downl https://github.com/b3r8t3r/Multiple-zshrc/raw/master/.zsh_aliases/test.zs
 
 if [ "$sys" == "Darwin" ]
 then
-$downl https://github.com/b3r8t3r/Multiple-zshrc/raw/master/.zsh_aliases/macos.zshrc >> "$aliases/`basename $_`"
+$downl https://github.com/b3r8t3r/Multiple-zshrc/raw/master/.zsh_aliases/macos.zshrc >> "$aliases/macos.zshrc"
 fi
 
 if [ "$sys" == "Linux" ]
 then
-$downl https://github.com/b3r8t3r/Multiple-zshrc/raw/master/.zsh_aliases/linux.zshrc >> "$aliases/`basename $_`"
+$downl https://github.com/b3r8t3r/Multiple-zshrc/raw/master/.zsh_aliases/linux.zshrc >> "$aliases/linux.zshrc"
 fi
