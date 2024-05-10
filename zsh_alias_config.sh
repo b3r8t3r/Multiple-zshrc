@@ -11,15 +11,15 @@ fi
 
 $downl https://github.com/b3r8t3r/Multiple-zshrc/raw/master/base.zshrc >> $rc
 
-$downl https://github.com/b3r8t3r/Multiple-zshrc/raw/master/.zsh_aliases/apt.zshrc >> "$aliases/`basename $_`"
+$downl https://github.com/b3r8t3r/Multiple-zshrc/raw/master/.zsh_aliases/apt.zshrc >> "$aliases/apt.zshrc"
 
-$downl https://github.com/b3r8t3r/Multiple-zshrc/raw/master/.zsh_aliases/git.zshrc >> "$aliases/`basename $_`"
+$downl https://github.com/b3r8t3r/Multiple-zshrc/raw/master/.zsh_aliases/git.zshrc >> "$aliases/git.zshrc"
 
-$downl https://github.com/b3r8t3r/Multiple-zshrc/raw/master/.zsh_aliases/python.zshrc >> "$aliases/`basename $_`"
+$downl https://github.com/b3r8t3r/Multiple-zshrc/raw/master/.zsh_aliases/python.zshrc >> "$aliases/python.zshrc"
 
-$downl https://github.com/b3r8t3r/Multiple-zshrc/raw/master/.zsh_aliases/shell.zshrc >> "$aliases/`basename $_`"
+$downl https://github.com/b3r8t3r/Multiple-zshrc/raw/master/.zsh_aliases/shell.zshrc >> "$aliases/shell.zsrc"
 
-$downl https://github.com/b3r8t3r/Multiple-zshrc/raw/master/.zsh_aliases/test.zshrc >> "$aliases/`basename $_`"
+$downl https://github.com/b3r8t3r/Multiple-zshrc/raw/master/.zsh_aliases/test.zshrc >> "$aliases/test.zshrc"
 
 if [ "`uname`" = "Darwin" ]
 then
